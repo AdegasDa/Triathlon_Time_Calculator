@@ -1,0 +1,286 @@
+/* Estilos existentes */
+
+.bg-header {
+    background-color: rgb(83, 131, 146);
+    height: 12rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+} 
+
+.bg-header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    gap: 1rem;
+}
+
+.info-container {
+    width: 48%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.info-container-xl {
+    width: 100%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* Adicionado para corrigir problemas de layout em diferentes tamanhos de tela */
+}
+
+.badge-statistc {
+    width: 48%; /* Ajustado para 48% no desktop e 100% no mobile */
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.card-statistc-title {
+    background-color: rgb(176, 235, 180);
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-statistc {
+    background-color: rgb(224, 251, 226);
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.list-container {
+    width: 36%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.info-list-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224, 251, 226);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.info-list-container-previous {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224, 251, 226);
+}
+
+.info-list-container-previous.last {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.title-list {
+    background-color: rgb(176, 235, 180);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.time-list {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 0px 16px !important;
+    }
+    .info-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .pace-container {
+        display: flex;
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .time-container {
+        display: flex;
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .warning {
+        border-radius: 0px !important;
+        padding: 14px 16px !important;
+    }
+    .feedback-container {
+        flex-direction: column;
+    }
+    .statistics-container,
+    .list-container {
+        width: 100%;
+    }
+    .badge-statistc {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .info-list-container,
+    .info-list-container-previous {
+        flex-direction: column;
+    }
+}
+
+.warning {
+    background-color: rgb(179, 226, 167);
+    color: black;
+}
+
+.button-submit {
+    width: 48%;
+    background-color: rgb(98, 149, 162) !important;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.button-submit:hover {
+    background-color: rgb(86, 134, 146) !important;
+}
+
+.arrow {
+    transition: transform 0.1s ease;
+}
+
+.arrow.down {
+    transform: rotate(-90deg);
+}
+
+.btn-white {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-left: 8px;
+    padding: 4px 20px;
+    cursor: pointer;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.btn-white.active {
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+.btn-white:hover {
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+}
+
+.input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px 0;
+    outline: none;
+    width: 100%;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.input:focus {
+    border-bottom-color: rgb(179, 226, 167);
+}
+
+.inp-group {
+    width: 32%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.unity {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    background-color: rgb(128, 185, 173);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.inp-time-pace {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    padding: 4px 0px;
+    outline: none;
+    width: 13%;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.inp-time-pace-bike {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    padding: 4px 0px;
+    outline: none;
+    width: 38%;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.inp-time-pace:focus {
+    border-bottom-color: rgb(179, 226, 167);
+}
+
+.inp-time-pace-bike:focus {
+    border-bottom-color: rgb(179, 226, 167);
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+    align-items: flex-end;
+}
+
+.input-group p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.time-container {
+    display: flex;
+    width: 54% !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    float: right;
+}
+
+.pace-container {
+    display: flex;
+    width: 46% !important;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
